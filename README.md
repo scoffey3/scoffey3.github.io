@@ -11,7 +11,7 @@ Syntax highlighted code block
 ## Header 2
 
 
-### List of Portfolio Projects:
+ # List of Portfolio Projects:
 
 - Advanced CSS
 - Media Queries
