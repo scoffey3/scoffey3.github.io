@@ -1,5 +1,4 @@
-# Mobile Web Development ![eagles logo](https://user-images.githubusercontent.com/71092566/93027413-9a61d580-f5da-11ea-8c1d-71b89e11ece1.png)
-
+# Mobile Web Development ![eagles logo]
 
 
 #### List of Portfolio Projects:
@@ -12,5 +11,8 @@
 - Professional Development
 
 
-[Link](url) and ![Image](src)
+
+
+(https://user-images.githubusercontent.com/71092566/93027413-9a61d580-f5da-11ea-8c1d-71b89e11ece1.png)
+
 
