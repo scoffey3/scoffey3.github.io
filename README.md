@@ -11,10 +11,6 @@
 - Bootstrap
 - Professional Development
 
-1. Numbered
-2. List
-
-
 
 [Link](url) and ![Image](src)
 
