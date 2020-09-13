@@ -12,6 +12,8 @@
 
 ##### About me
 My name is Steve and I am a computer science student at Delaware County Community College.
+I plan to transfer to West Chester University when I finish my classes in the spring 2021 semester.
+Go Birds!
 
 
 
