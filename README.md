@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Projects Home Page
 
 ### Markdown
 
@@ -9,10 +9,16 @@ Syntax highlighted code block
 
 # Header 1
 ## Header 2
-### Header 3
 
-- Bulleted
-- List
+
+### List of Portfolio Projects:
+
+- Advanced CSS
+- Media Queries
+- CSS Grid Systems
+- Flexbox
+- Bootstrap
+- Professional Development
 
 1. Numbered
 2. List
