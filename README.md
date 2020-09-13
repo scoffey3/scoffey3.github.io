@@ -1,8 +1,7 @@
 # Projects Home Page
 
 
-
-  List of Portfolio Projects:
+## List of Portfolio Projects:
 
 - Advanced CSS
 - Media Queries
