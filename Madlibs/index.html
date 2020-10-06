@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+        #wrapper { background-color:bisque;
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 2em;}
+        </style>
+    </head>
+<body>
+
+<div id = "wrapper">
+
+<img src = "https://www.madlibs.com/wp-content/themes/madlibs/assets/images/mdl_logo.png" width="20%" height="auto" alt="mad libs logo">
+<p>Please enter the following information:</p>
+
+<input id="pluralNoun" placeholder="a plural noun"><br>
+<input id="noun1" placeholder="a noun"><br>
+<input id="noun2" placeholder="another noun"><br>
+<input id="adjective" placeholder="adjective"><br>
+<input id="verb" placeholder="verb"><br>
+
+<button type="button"  onclick="return getInputValues();" >Submit</button>
+
+
+<p>The <span id="outputPluralNoun">   </span> were running through the streets after the
+<span id="outputNoun1">    </span>.
+<br>
+Then suddenly a <span id="outputAdjective">    </span> cat appeared out of no where.
+ 
+<br> 
+The <span id="outputPluralNoun"> were frightened by this and <span id="outputVerb">    </span> to the <span id="outputNoun2">    </span>. 
+</p>
+
+<button id="GOBTN" disabled>Go Again</button>
+
+<script>
+
+function disableBtn() {
+    document.getElementById("GOBTN").disabled = true;
+}
+
+function enableBtn() {
+    document.getElementById("GOBTN").disabled = false;
+document.getElementById("GOBTN").onclick = function() {  
+ document.getElementById("outputPluralNoun").innerText = '';
+document.getElementById("outputNoun1").innerText = '';
+  document.getElementById("outputNoun2").innerText = '';
+  document.getElementById("outputsong").innerText = '';
+  document.getElementById("outputVerb").innerText = '';
+disableBtn();
+
+};  
+} 
+
+function getInputValues(){
+var name= document.getElementById("pluralNoun").value; 
+if (name == "") {
+    alert("pluralNoun must be filled out");
+    return false;
+  }
+
+var noun1=document.getElementById("noun1").value;
+if (noun1 == "") {
+    alert("Noun1 must be filled out");
+    return false;
+  }
+  
+var noun2 = document.getElementById("noun2").value;
+if (noun2 == "") {
+    alert("Noun2 must be filled out");
+    return false;
+  }
+
+var song=document.getElementById("adjective").value;
+if (song == "") {
+    alert("Song must be filled out");
+    return false;
+  }
+
+var verb =document.getElementById("verb").value;
+if (verb == "") {
+    alert("Verb must be filled out");
+    return false;
+  }
+
+ document.getElementById("outputPluralNoun").innerText = name.toUpperCase();
+ document.getElementById("outputNoun1").innerText = noun1.toUpperCase();
+ document.getElementById("outputNoun2").innerText = noun2.toUpperCase();
+ document.getElementById("outputAdjective").innerText = adjective.toUpperCase();
+ document.getElementById("outputVerb").innerText = verb.toUpperCase();
+
+document.getElementById("pluralNoun").value='';
+document.getElementById("noun1").value='';
+document.getElementById("noun2").value='';
+document.getElementById("adjective").value='';
+document.getElementById("verb").value='';
+
+enableBtn();
+}
+
+</script> 
+        
+</div>
+</body>
+</html>
