@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language="Javascript">MyBanners=new Array('superhero1.png','superhero2.png','superhero3.png','superhero4.png','superhero5.png','superhero6.png')
+MyBannerLinks=new Array('http://www.nike.com/','http://www.adidas.com/','http://www.youtube.com/','http://www.dccc.edu/','http://www.yahoo.com/','http://www.google.com/')
+banner=0
+function ShowLinks(){
+document.location.href= ""+MyBannerLinks[banner]
+}function ShowBanners()
+{ if (document.images)
+{ banner++
+if (banner==MyBanners.length) {
+banner=0}
+document.ChangeBanner.src=MyBanners[banner]
+setTimeout("ShowBanners()",3000)
+}
+}
+</script>
+<body onload="ShowBanners()">
+<center>
+<a href="javascript: ShowLinks()">
+<img src="superhero1.png" width="900" height="240" name="ChangeBanner"/></a>
+</center>
+</body>
+</html>
