@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Responsive Vacation Site</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font: 1.2em/1.4 Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        padding: 0 0 1em;
+      }
+
+      header {
+        background-color: #f4f4f4
+        color: black;
+        border: 5px solid #000;
+      }
+	  
+
+	.qrcode {
+	width: 25%;
+	height: 25%;
+	background-color: #ccc;
+	}
+
+      header ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+	
+      }
+
+      header a {
+        color: #ccc;
+        text-decoration: none;
+		background-color: #f4f4f4;
+		color: black;
+		font-weight: bold;
+        display: block;
+        padding: 0.5em .5em;
+        border-top: 1px solid #999;
+      }
+
+      header .title {
+		position: relative;
+		margin-left: 50%;
+		background-color: #f4f4f4;
+        	font-size: 150%;
+		text-shadow: 3px 3px 2px white;
+        	font-weight: bold;
+        	padding: 10px;
+		color: black;
+      }
+
+      main {
+        padding: 0 1em;
+      }
+
+      .cards {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .cards li {
+        border: 5px solid #000;
+        margin-bottom: 1em;
+      }
+
+      .cards h2 {
+        background-color: #f4f4f4;
+        color: black;
+        margin: 0;
+        padding: 0.5em 1em;
+      }
+
+      .cards .inner {
+        padding: 0.5em 1em;
+      }
+	  
+	  img {
+	  width: 100%;
+	  height: 75%;
+	  }
+	  
+	  .container {
+	   position: relative;
+	   overflow: hidden;
+	   width: 100%;
+	   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	  }
+
+
+	  .responsive-iframe {
+	   position: absolute;
+	   top: 0;
+	   left: 0;
+	   bottom: 0;
+	   right: 0;
+	   width: 100%;
+	   height: 100%;
+	  }
+	  
+		
+      .sidebar {
+        border: 5px solid #000;
+        padding: 0.5em 1em;
+        color: black;
+		background-color: #f4f4f4;
+      }
+	  
+
+	  
+@media screen and (min-width: 40em)  {
+		header {
+		background-color: #ccc;
+		}
+		
+		header .title {
+        	font-size: 150%;
+		position: relative;
+		background-color: #f4f4f4;
+		margin-left: 20%;
+		padding: 1em;
+		}
+		
+		header img {
+		float: left;
+		margin-left: 20px;
+		width: 130px;
+		height: 130px;
+		}
+		
+		header a{
+		border-top: none;
+		background-color: #f4f4f4;
+		color: black;
+		margin-left: 20px;
+		}
+		
+        	nav ul {
+         	 display: flex;
+		  position: relative;
+        	}
+			
+		article ul {
+		display: grid;
+       		grid-template-columns: auto auto;
+        	column-gap: 50px;
+		}
+		
+		.cards h2 {
+        	background-color: #f4f4f4;
+        	color: black;
+		}
+		
+		.sidebar {
+        	background-color: #f4f4f4;
+        	color: black;
+      		}
+		
+}
+
+@media screen and (min-width: 70em) {
+		header {
+		display: grid;
+        	grid-template-columns: auto auto auto;
+        	column-gap: 50px;
+		width: 100%;
+		background-color: #ccc;
+        	}
+			
+		header .title {
+		position: relative;
+		font-size: 150%;
+		margin-left: 0%;
+		background-color: #f4f4f4;
+		}
+		
+		header img {
+		margin-left: 200px;
+		width: 100px;
+		height: 100px;
+		background: #ccc;		
+		}
+				
+		header a{
+		height: 100px;
+		background-color: #f4f4f4;
+		text-decoration: none;
+		color: black;
+		border-top: none;
+		padding-top: 30px;		
+		}
+			
+		article {
+		height: 900px;
+		margin-top: 20px;
+		width: 75%;
+		float: left;
+		padding-right: 20px;
+		}
+	
+		article ul {
+		display: grid;
+        	grid-template-columns: auto auto auto;
+        	column-gap: 50px;
+		}
+		
+		.cards h2 {
+        	background-color: #f4f4f4;
+        	color: black;
+		}
+	
+		.sidebar {	
+		height: 980px;
+		width: 25%;
+		float: left;
+		padding-bottom: 65%;
+		margin-top: 20px;
+		box-sizing: border-box;
+		background-color: #f4f4f4;
+		}
+
+}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <header>
+	<div class="qrcode">
+	<img src="images/qrcode.png" alt="qrcode" width="100" height="100" >
+	</div>
+      <div class="title">Luxury Vacations</div>
+	        <nav>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Activities</a>
+          </li>
+          <li>
+            <a href="">Reservations</a>
+          </li>
+        </ul>
+      </nav>
+		
+    </header>
+
+    <main>
+      <article>
+        <h1>Enjoy The Beauty Of The Northern Lights</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<div class="container">
+       <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Vdb9IndsSXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<br><br>
+		<ul class="cards">
+          <li>
+            <h2>Image 1</h2>
+            <div class="inner">
+              <img src="images/background1.jpg" width="200" height="150" alt="Trip Package 1">
+            </div>
+          </li>
+          <li>
+            <h2>Image 2</h2>
+            <div class="inner">
+              <img src="images/background2.jpg" width="200" height="150" alt="Trip Package 2">
+            </div>
+          </li>
+          <li>
+            <h2>Image 3</h2>
+            <div class="inner">
+              <img src="images/background.jpg" width="200" height="150" alt="Trip Package 3">
+            </div>
+          </li>
+          
+
+        </ul>
+      </article>
+      <aside class="sidebar">
+        <h2> Book Now!</h2>
+	<p>Are you ready to take your vacation to the next level?</p>
+
+      </aside>
+    </main>
+
+  </body>
+
+</html>
