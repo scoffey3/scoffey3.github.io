@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+html{
+	background-color: #a9a9a9;
+}
+
+header{
+	background-color: #a9a9a9;
+	text-align: center;
+	font-family:Georgia,"Times New Roman",serif;
+
+}
+
+nav ul {
+	display: flex;				/* setting the nav ul to flex */	
+	justify-content: center;
+	align-items: center;
+}
+	
+nav li {
+	list-style-type: none;	
+}
+
+nav a:link,
+nav a:visited {
+	display: inline-block;			/* Setting inline-block to the nav links to be in line */
+	width: 90px;
+	background-color: #f4f4f4;
+	border: 2px solid #330033;
+	border-radius: .5em;
+	color: #000000;	
+	padding: .5em;   
+    	text-decoration: none;
+}
+
+#wrapper {
+	display: flex;				/* Setting a flexbox to the elements main and aside, 2 columns */
+	flex-direction: row;			/* Positioning the flex items direction to row */
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	background-color:#90C7E3;
+	box-shadow: 3px 3px 3px 3px #333333;
+}
+
+main {
+	margin-left: 20px;
+	flex:8;					/* Using the flex property to customize the size of each flex item. */
+}	
+
+img {
+    width: 70%;
+    height: auto;
+}
+   
+p {
+	text-align: justify;
+	padding-right: 20px;
+}
+
+.sidebar {
+	flex: 2;				/* Using the flex property to customize the size of each flex item. */
+	width: 100px;
+	padding-left: 15px;
+	margin-left: 15px;
+	padding-top: 20px;
+	color: black;
+	float: right;
+	background-color: #f4f4f4;
+	
+}
+
+footer {
+	font-size: 75%;
+	text-align:center;
+	font-family:Georgia,"Times New Roman",serif;
+	padding: 2em;
+}
+
+@media screen and (max-width: 600px) {
+
+	#wrapper {
+	flex-direction: column;			/* Change flex-items to column for mobile */
+	}
+
+	h2 {
+	font-size: 18px;
+	}
+	
+	nav ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+
+	nav a:link,
+	nav a:visited {
+	display:flex;				/* Setting the nav links to flex to change structure for mobile */
+	justify-content: center;
+	width: 100px;
+	}
+  
+	.sidebar {
+	width: 50%;
+	}
+  
+	img {
+	width: 100%;
+	}
+}
+</style>
+
+<title>Product Page</title>
+</head>
+
+<body>
+	
+
+		<header>
+			<h1>Golf Depot</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">About</a></li>
+
+			</ul>
+		</nav>
+		
+		<div id="wrapper">
+			<main>
+
+			<h2> Our Mission </h2>
+
+			<p>lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+				
+			<h2> Products</h2>
+			<img src="golf.jpg" alt="products">
+			
+			<h2> About</h2>
+			<p>lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+			</main>
+			
+			<aside class="sidebar">
+				<h3> Contact </h3>
+				Headquarters  <br>
+				469 Long rd <br>
+				West Chester, PA 19382 <br>
+				<br>(123)-444-5678
+				<a href="mailto:contact@gmail.com">contact@gmail.com</a>
+			</aside>
+					
+		
+		</div>
+  
+		<footer>
+	
+			<br>Copyright &copy; 2020 Golf Deopt Company
+
+		</footer>
+	
+</body>
+</html>
